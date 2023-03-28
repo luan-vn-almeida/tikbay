@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52122B9429D2ADB800F937BB /* PanDirectionGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52122B9329D2ADB800F937BB /* PanDirectionGestureRecognizer.swift */; };
+		52122B9729D2B34B00F937BB /* ReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52122B9629D2B34B00F937BB /* ReactionView.swift */; };
+		52122B9929D2B35700F937BB /* ReactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52122B9829D2B35700F937BB /* ReactionViewModel.swift */; };
+		522608D329D25BDA00403376 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608D229D25BDA00403376 /* ImageService.swift */; };
+		522608D529D25BE700403376 /* LooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608D429D25BE700403376 /* LooksService.swift */; };
+		522608D729D25D6300403376 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608D629D25D6300403376 /* ServiceError.swift */; };
+		522608D929D25DBB00403376 /* HeaderComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608D829D25DBB00403376 /* HeaderComponentViewModel.swift */; };
+		522608DC29D25E7800403376 /* Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608DB29D25E7800403376 /* Look.swift */; };
+		522608DF29D26B4200403376 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 522608DE29D26B4200403376 /* mock.json */; };
+		522608E129D2703100403376 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608E029D2703100403376 /* Collection+Extension.swift */; };
+		522608E729D2734700403376 /* BodyComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608E629D2734700403376 /* BodyComponentView.swift */; };
+		522608EB29D273D600403376 /* BodyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608EA29D273D600403376 /* BodyCollectionViewCell.swift */; };
+		522608ED29D2788F00403376 /* BodyComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608EC29D2788F00403376 /* BodyComponentViewModel.swift */; };
+		522608F029D27B5200403376 /* BodyCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608EF29D27B5200403376 /* BodyCollectionViewModel.swift */; };
+		522608F229D288A100403376 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608F129D288A100403376 /* UILabel+Extension.swift */; };
+		522608F429D2A52D00403376 /* ReactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522608F329D2A52D00403376 /* ReactionManager.swift */; };
+		52607DB129D2530500E1FDC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DB029D2530500E1FDC2 /* AppDelegate.swift */; };
+		52607DB329D2530500E1FDC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DB229D2530500E1FDC2 /* SceneDelegate.swift */; };
+		52607DBB29D2530500E1FDC2 /* TikBay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52607DB929D2530500E1FDC2 /* TikBay.xcdatamodeld */; };
+		52607DBD29D2530600E1FDC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52607DBC29D2530600E1FDC2 /* Assets.xcassets */; };
+		52607DC029D2530600E1FDC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52607DBE29D2530600E1FDC2 /* LaunchScreen.storyboard */; };
+		52607DCB29D2530600E1FDC2 /* TikBayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DCA29D2530600E1FDC2 /* TikBayTests.swift */; };
+		52607DD529D2530700E1FDC2 /* TikBayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DD429D2530700E1FDC2 /* TikBayUITests.swift */; };
+		52607DD729D2530700E1FDC2 /* TikBayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DD629D2530700E1FDC2 /* TikBayUITestsLaunchTests.swift */; };
+		52607DE529D2543600E1FDC2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DE429D2543600E1FDC2 /* DashboardViewController.swift */; };
+		52607DE729D2544E00E1FDC2 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DE629D2544E00E1FDC2 /* DashboardViewModel.swift */; };
+		52607DEA29D2566500E1FDC2 /* HeaderComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DE929D2566500E1FDC2 /* HeaderComponentView.swift */; };
+		52607DED29D256B000E1FDC2 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52607DEC29D256B000E1FDC2 /* ViewConfiguration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52607DC729D2530600E1FDC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52607DA529D2530500E1FDC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52607DAC29D2530500E1FDC2;
+			remoteInfo = TikBay;
+		};
+		52607DD129D2530700E1FDC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52607DA529D2530500E1FDC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52607DAC29D2530500E1FDC2;
+			remoteInfo = TikBay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52122B9329D2ADB800F937BB /* PanDirectionGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanDirectionGestureRecognizer.swift; sourceTree = "<group>"; };
+		52122B9629D2B34B00F937BB /* ReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionView.swift; sourceTree = "<group>"; };
+		52122B9829D2B35700F937BB /* ReactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionViewModel.swift; sourceTree = "<group>"; };
+		522608D229D25BDA00403376 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		522608D429D25BE700403376 /* LooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooksService.swift; sourceTree = "<group>"; };
+		522608D629D25D6300403376 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		522608D829D25DBB00403376 /* HeaderComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponentViewModel.swift; sourceTree = "<group>"; };
+		522608DB29D25E7800403376 /* Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Look.swift; sourceTree = "<group>"; };
+		522608DE29D26B4200403376 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		522608E029D2703100403376 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		522608E629D2734700403376 /* BodyComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyComponentView.swift; sourceTree = "<group>"; };
+		522608EA29D273D600403376 /* BodyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCollectionViewCell.swift; sourceTree = "<group>"; };
+		522608EC29D2788F00403376 /* BodyComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyComponentViewModel.swift; sourceTree = "<group>"; };
+		522608EF29D27B5200403376 /* BodyCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCollectionViewModel.swift; sourceTree = "<group>"; };
+		522608F129D288A100403376 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		522608F329D2A52D00403376 /* ReactionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionManager.swift; sourceTree = "<group>"; };
+		52607DAD29D2530500E1FDC2 /* TikBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52607DB029D2530500E1FDC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52607DB229D2530500E1FDC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52607DBA29D2530500E1FDC2 /* TikBay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TikBay.xcdatamodel; sourceTree = "<group>"; };
+		52607DBC29D2530600E1FDC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52607DBF29D2530600E1FDC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52607DC129D2530600E1FDC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52607DC629D2530600E1FDC2 /* TikBayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikBayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52607DCA29D2530600E1FDC2 /* TikBayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikBayTests.swift; sourceTree = "<group>"; };
+		52607DD029D2530700E1FDC2 /* TikBayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikBayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52607DD429D2530700E1FDC2 /* TikBayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikBayUITests.swift; sourceTree = "<group>"; };
+		52607DD629D2530700E1FDC2 /* TikBayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikBayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52607DE429D2543600E1FDC2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		52607DE629D2544E00E1FDC2 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		52607DE929D2566500E1FDC2 /* HeaderComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponentView.swift; sourceTree = "<group>"; };
+		52607DEC29D256B000E1FDC2 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52607DAA29D2530500E1FDC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52607DC329D2530600E1FDC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52607DCD29D2530700E1FDC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52122B9529D2B33C00F937BB /* Reaction */ = {
+			isa = PBXGroup;
+			children = (
+				52122B9629D2B34B00F937BB /* ReactionView.swift */,
+				52122B9829D2B35700F937BB /* ReactionViewModel.swift */,
+			);
+			path = Reaction;
+			sourceTree = "<group>";
+		};
+		522608CD29D259DB00403376 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				522608E029D2703100403376 /* Collection+Extension.swift */,
+				522608F129D288A100403376 /* UILabel+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		522608D029D25BB900403376 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		522608D129D25BC900403376 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				522608DA29D25E6F00403376 /* Entity */,
+				522608D229D25BDA00403376 /* ImageService.swift */,
+				522608D429D25BE700403376 /* LooksService.swift */,
+				522608D629D25D6300403376 /* ServiceError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		522608DA29D25E6F00403376 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				522608DB29D25E7800403376 /* Look.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		522608DD29D26AF100403376 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				522608DE29D26B4200403376 /* mock.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		522608E229D2731700403376 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				52607DE929D2566500E1FDC2 /* HeaderComponentView.swift */,
+				522608D829D25DBB00403376 /* HeaderComponentViewModel.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		522608E329D2732700403376 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52122B9529D2B33C00F937BB /* Reaction */,
+				522608E429D2732D00403376 /* Body */,
+				522608E229D2731700403376 /* Header */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		522608E429D2732D00403376 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				522608EE29D27B4000403376 /* Cell */,
+				522608E629D2734700403376 /* BodyComponentView.swift */,
+				522608EC29D2788F00403376 /* BodyComponentViewModel.swift */,
+			);
+			path = Body;
+			sourceTree = "<group>";
+		};
+		522608EE29D27B4000403376 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				522608EA29D273D600403376 /* BodyCollectionViewCell.swift */,
+				522608EF29D27B5200403376 /* BodyCollectionViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		52607DA429D2530500E1FDC2 = {
+			isa = PBXGroup;
+			children = (
+				52607DAF29D2530500E1FDC2 /* TikBay */,
+				52607DC929D2530600E1FDC2 /* TikBayTests */,
+				52607DD329D2530700E1FDC2 /* TikBayUITests */,
+				52607DAE29D2530500E1FDC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52607DAE29D2530500E1FDC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52607DAD29D2530500E1FDC2 /* TikBay.app */,
+				52607DC629D2530600E1FDC2 /* TikBayTests.xctest */,
+				52607DD029D2530700E1FDC2 /* TikBayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52607DAF29D2530500E1FDC2 /* TikBay */ = {
+			isa = PBXGroup;
+			children = (
+				52607DB029D2530500E1FDC2 /* AppDelegate.swift */,
+				52607DB229D2530500E1FDC2 /* SceneDelegate.swift */,
+				522608D029D25BB900403376 /* Scenes */,
+				52607DE329D253BF00E1FDC2 /* Dashboard */,
+				522608D129D25BC900403376 /* Services */,
+				52607DEB29D2569300E1FDC2 /* Commons */,
+				52607DBC29D2530600E1FDC2 /* Assets.xcassets */,
+				52607DBE29D2530600E1FDC2 /* LaunchScreen.storyboard */,
+				52607DC129D2530600E1FDC2 /* Info.plist */,
+				52607DB929D2530500E1FDC2 /* TikBay.xcdatamodeld */,
+			);
+			path = TikBay;
+			sourceTree = "<group>";
+		};
+		52607DC929D2530600E1FDC2 /* TikBayTests */ = {
+			isa = PBXGroup;
+			children = (
+				52607DCA29D2530600E1FDC2 /* TikBayTests.swift */,
+			);
+			path = TikBayTests;
+			sourceTree = "<group>";
+		};
+		52607DD329D2530700E1FDC2 /* TikBayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52607DD429D2530700E1FDC2 /* TikBayUITests.swift */,
+				52607DD629D2530700E1FDC2 /* TikBayUITestsLaunchTests.swift */,
+			);
+			path = TikBayUITests;
+			sourceTree = "<group>";
+		};
+		52607DE329D253BF00E1FDC2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				522608E329D2732700403376 /* Views */,
+				52607DE429D2543600E1FDC2 /* DashboardViewController.swift */,
+				52607DE629D2544E00E1FDC2 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		52607DEB29D2569300E1FDC2 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				522608DD29D26AF100403376 /* Files */,
+				522608CD29D259DB00403376 /* Extensions */,
+				52607DEC29D256B000E1FDC2 /* ViewConfiguration.swift */,
+				522608F329D2A52D00403376 /* ReactionManager.swift */,
+				52122B9329D2ADB800F937BB /* PanDirectionGestureRecognizer.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52607DAC29D2530500E1FDC2 /* TikBay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52607DDA29D2530700E1FDC2 /* Build configuration list for PBXNativeTarget "TikBay" */;
+			buildPhases = (
+				52607DA929D2530500E1FDC2 /* Sources */,
+				52607DAA29D2530500E1FDC2 /* Frameworks */,
+				52607DAB29D2530500E1FDC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikBay;
+			productName = TikBay;
+			productReference = 52607DAD29D2530500E1FDC2 /* TikBay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52607DC529D2530600E1FDC2 /* TikBayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52607DDD29D2530700E1FDC2 /* Build configuration list for PBXNativeTarget "TikBayTests" */;
+			buildPhases = (
+				52607DC229D2530600E1FDC2 /* Sources */,
+				52607DC329D2530600E1FDC2 /* Frameworks */,
+				52607DC429D2530600E1FDC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52607DC829D2530600E1FDC2 /* PBXTargetDependency */,
+			);
+			name = TikBayTests;
+			productName = TikBayTests;
+			productReference = 52607DC629D2530600E1FDC2 /* TikBayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52607DCF29D2530700E1FDC2 /* TikBayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52607DE029D2530700E1FDC2 /* Build configuration list for PBXNativeTarget "TikBayUITests" */;
+			buildPhases = (
+				52607DCC29D2530700E1FDC2 /* Sources */,
+				52607DCD29D2530700E1FDC2 /* Frameworks */,
+				52607DCE29D2530700E1FDC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52607DD229D2530700E1FDC2 /* PBXTargetDependency */,
+			);
+			name = TikBayUITests;
+			productName = TikBayUITests;
+			productReference = 52607DD029D2530700E1FDC2 /* TikBayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52607DA529D2530500E1FDC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					52607DAC29D2530500E1FDC2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					52607DC529D2530600E1FDC2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 52607DAC29D2530500E1FDC2;
+					};
+					52607DCF29D2530700E1FDC2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 52607DAC29D2530500E1FDC2;
+					};
+				};
+			};
+			buildConfigurationList = 52607DA829D2530500E1FDC2 /* Build configuration list for PBXProject "TikBay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52607DA429D2530500E1FDC2;
+			productRefGroup = 52607DAE29D2530500E1FDC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52607DAC29D2530500E1FDC2 /* TikBay */,
+				52607DC529D2530600E1FDC2 /* TikBayTests */,
+				52607DCF29D2530700E1FDC2 /* TikBayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52607DAB29D2530500E1FDC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52607DC029D2530600E1FDC2 /* LaunchScreen.storyboard in Resources */,
+				52607DBD29D2530600E1FDC2 /* Assets.xcassets in Resources */,
+				522608DF29D26B4200403376 /* mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52607DC429D2530600E1FDC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52607DCE29D2530700E1FDC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52607DA929D2530500E1FDC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522608E729D2734700403376 /* BodyComponentView.swift in Sources */,
+				522608F029D27B5200403376 /* BodyCollectionViewModel.swift in Sources */,
+				522608D729D25D6300403376 /* ServiceError.swift in Sources */,
+				522608DC29D25E7800403376 /* Look.swift in Sources */,
+				52122B9729D2B34B00F937BB /* ReactionView.swift in Sources */,
+				52607DB129D2530500E1FDC2 /* AppDelegate.swift in Sources */,
+				522608ED29D2788F00403376 /* BodyComponentViewModel.swift in Sources */,
+				522608F429D2A52D00403376 /* ReactionManager.swift in Sources */,
+				522608D329D25BDA00403376 /* ImageService.swift in Sources */,
+				52607DE729D2544E00E1FDC2 /* DashboardViewModel.swift in Sources */,
+				522608F229D288A100403376 /* UILabel+Extension.swift in Sources */,
+				522608D929D25DBB00403376 /* HeaderComponentViewModel.swift in Sources */,
+				52607DB329D2530500E1FDC2 /* SceneDelegate.swift in Sources */,
+				52122B9929D2B35700F937BB /* ReactionViewModel.swift in Sources */,
+				52607DEA29D2566500E1FDC2 /* HeaderComponentView.swift in Sources */,
+				522608E129D2703100403376 /* Collection+Extension.swift in Sources */,
+				52607DBB29D2530500E1FDC2 /* TikBay.xcdatamodeld in Sources */,
+				522608EB29D273D600403376 /* BodyCollectionViewCell.swift in Sources */,
+				52607DED29D256B000E1FDC2 /* ViewConfiguration.swift in Sources */,
+				52122B9429D2ADB800F937BB /* PanDirectionGestureRecognizer.swift in Sources */,
+				52607DE529D2543600E1FDC2 /* DashboardViewController.swift in Sources */,
+				522608D529D25BE700403376 /* LooksService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52607DC229D2530600E1FDC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52607DCB29D2530600E1FDC2 /* TikBayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52607DCC29D2530700E1FDC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52607DD729D2530700E1FDC2 /* TikBayUITestsLaunchTests.swift in Sources */,
+				52607DD529D2530700E1FDC2 /* TikBayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52607DC829D2530600E1FDC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52607DAC29D2530500E1FDC2 /* TikBay */;
+			targetProxy = 52607DC729D2530600E1FDC2 /* PBXContainerItemProxy */;
+		};
+		52607DD229D2530700E1FDC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52607DAC29D2530500E1FDC2 /* TikBay */;
+			targetProxy = 52607DD129D2530700E1FDC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52607DBE29D2530600E1FDC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52607DBF29D2530600E1FDC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52607DD829D2530700E1FDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52607DD929D2530700E1FDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52607DDB29D2530700E1FDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TikBay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tikbay.TikBay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52607DDC29D2530700E1FDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TikBay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tikbay.TikBay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52607DDE29D2530700E1FDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tikbay.TikBayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikBay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TikBay";
+			};
+			name = Debug;
+		};
+		52607DDF29D2530700E1FDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tikbay.TikBayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikBay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TikBay";
+			};
+			name = Release;
+		};
+		52607DE129D2530700E1FDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tikbay.TikBayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TikBay;
+			};
+			name = Debug;
+		};
+		52607DE229D2530700E1FDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tikbay.TikBayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TikBay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52607DA829D2530500E1FDC2 /* Build configuration list for PBXProject "TikBay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52607DD829D2530700E1FDC2 /* Debug */,
+				52607DD929D2530700E1FDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52607DDA29D2530700E1FDC2 /* Build configuration list for PBXNativeTarget "TikBay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52607DDB29D2530700E1FDC2 /* Debug */,
+				52607DDC29D2530700E1FDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52607DDD29D2530700E1FDC2 /* Build configuration list for PBXNativeTarget "TikBayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52607DDE29D2530700E1FDC2 /* Debug */,
+				52607DDF29D2530700E1FDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52607DE029D2530700E1FDC2 /* Build configuration list for PBXNativeTarget "TikBayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52607DE129D2530700E1FDC2 /* Debug */,
+				52607DE229D2530700E1FDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52607DB929D2530500E1FDC2 /* TikBay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52607DBA29D2530500E1FDC2 /* TikBay.xcdatamodel */,
+			);
+			currentVersion = 52607DBA29D2530500E1FDC2 /* TikBay.xcdatamodel */;
+			path = TikBay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 52607DA529D2530500E1FDC2 /* Project object */;
+}
